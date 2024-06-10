@@ -1,0 +1,22 @@
+#include<stdio.h>
+void main()
+{
+int n,i,r,temp,sum,m;
+scanf("%d",&m);
+for(n=1;n<=m;n++){
+sum=0;
+temp=n;
+while(n!=0)
+{
+r=n%10;
+sum=sum*10+r;
+n=n/10;
+}
+n=temp;
+if(temp==sum)
+    printf("%d ",temp);
+}
+}
+output:
+10
+1 2 3 4 5 6 7 8 9 
